@@ -112,8 +112,8 @@
         var xyz = get_xyz(d);
         country = d;
 
-        if (d.id  == 'USA' || d.id == 'JPN') {
-          d3.json("Data/states_" + d.id.toLowerCase() + ".topo.json", function(error, us) {
+        if (d.id  == 'PAK' ) {
+          d3.json("Data/pak_districts " + d.id.toLowerCase() + ".topo.json", function(error, us) {
             g.append("g")
               .attr("id", "states")
               .selectAll("path")
