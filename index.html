@@ -47,8 +47,9 @@
         state;
 
     var projection = d3.geo.mercator()
-        .scale(1500)
-        .translate([width / 2, height / 1.5]);
+    .center([0, 5 ])
+    .scale(900)
+    .rotate([-180,0]);
 
     var path = d3.geo.path()
         .projection(projection);
